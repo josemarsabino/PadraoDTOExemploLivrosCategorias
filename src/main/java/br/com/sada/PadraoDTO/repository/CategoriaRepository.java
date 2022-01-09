@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import br.com.sada.PadraoDTO.model.Categoria;
 
-
+@Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 
 }
