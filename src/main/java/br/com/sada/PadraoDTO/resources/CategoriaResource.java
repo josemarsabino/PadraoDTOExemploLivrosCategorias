@@ -1,5 +1,7 @@
 package br.com.sada.PadraoDTO.resources;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,8 +25,12 @@ public class CategoriaResource {
 		return ResponseEntity.ok().body(obj);
 
 	}
-	
-	
-	
+
+	@RequestMapping
+	public List<Categoria> litarTudo() {
+		List<Categoria> result = categService.listaAll();
+
+		return result;
+	}
 
 }
