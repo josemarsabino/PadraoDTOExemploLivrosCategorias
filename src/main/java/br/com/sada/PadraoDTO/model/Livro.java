@@ -109,11 +109,6 @@ public class Livro implements Serializable {
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		return "Livro [id=" + id + ", titulo=" + titulo + ", nome_autor=" + nome_autor + ", texto=" + texto
-				+ ", categoria=" + categoria + "]";
-	}
 	
 	
 	
